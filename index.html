@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinners e Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: darkgray;
+    }
+    .container{
+        background-color: rgb(233, 219, 201);
+    } 
+</style>
+<body>
+    <div class="container">
+    <div class="container mt-3">
+        <h4>Exemplo Pagination</h4>                  
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <p>Usado normalmente para a mudança de páginas.</p>
+        <img src="Capturar.JPG" >
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <p>Usado para demonstrar ao usuário em qual página ele está.</p>
+        <img src="Capturardois.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Pagination com botão desabilitado</h4>
+       
+        <ul class="pagination">
+          <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <img src="Capturar3.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Pagination - Tamanho</h4> 
+        <p>Large:</p>
+        <ul class="pagination pagination-lg">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      
+        <p>Default:</p>
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      
+        <p>Small:</p>
+        <ul class="pagination pagination-sm">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <img src="Capturar4.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Pagination</h4>
+        <p>Usado para alterar o alinhamento da paginação</p>                  
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <img src="Capturar5.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Breadcrumbs</h4>
+        <p>São indicadores que representam o caminho percorrido pelo visitante dentro de um website.</p>                  
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Photos</a></li>
+          <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+          <li class="breadcrumb-item"><a href="#">Italy</a></li>
+          <li class="breadcrumb-item active">Rome</li>
+        </ul>
+        <img src="Capturar6.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Spinners</h4>
+        <p>Usado normalmente para demonstrar o carregamento de arquivos, vídeos, dentre outros.</p>
+                                              
+        <div class="spinner-border"></div>
+      </div>
+      <img src="Capturar7.JPG">
+      <hr><br>
+      <div class="container mt-3">
+        <h4>Colored Spinners</h4>
+        <p>Usado para a estilização do spinner.</p>
+                                              
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-secondary"></div>
+        <div class="spinner-border text-dark"></div>
+        <div class="spinner-border text-light"></div>
+        <p> .</p>
+        <img src="rere.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h2>Growing Spinners</h2>
+        <p>Usado para que o girador/carregador cresça ao invés de "girar"</p>
+                                              
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+        <p>.</p>
+        <img src="Capturar9.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h2>Spinner Size</h2>
+        <p>Usado para alterar o tamanho do spinner.</p>
+                                              
+        <div class="spinner-border spinner-border-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <p><div class=""></div></p>
+        <img src="Capturar10.JPG">
+      </div>
+      <hr><br>
+      <div class="container mt-3">
+        <h2>Spinner Buttons</h2>
+        <p>Spinner em forma de botão.</p>
+                                              
+        <button class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm"></span>
+        </button>
+      
+        <button class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm"></span>
+          Loading..
+        </button>
+        
+        <button class="btn btn-primary" disabled>
+          <span class="spinner-border spinner-border-sm"></span>
+          Loading..
+        </button>
+        
+        <button class="btn btn-primary" disabled>
+          <span class="spinner-grow spinner-grow-sm"></span>
+          Loading..
+        </button>
+        <p>.</p>
+        <img src="Capturar11.JPG">
+      </div>
+    </div>
+      <hr><br>
+
+</body>
+</html>
